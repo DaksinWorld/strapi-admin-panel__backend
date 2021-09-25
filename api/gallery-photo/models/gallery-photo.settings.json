@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_photos",
+  "info": {
+    "name": "Gallery-photo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "AllPhoto",
+        "PaperWork",
+        "Portal",
+        "Phlegm",
+        "Compact",
+        "Jellyfish",
+        "Skins",
+        "Series",
+        "Single"
+      ]
+    }
+  }
+}
