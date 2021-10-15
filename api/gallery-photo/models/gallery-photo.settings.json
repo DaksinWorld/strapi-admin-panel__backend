@@ -1,0 +1,81 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallery_photos",
+  "info": {
+    "name": "gallery-photo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "tags": {
+      "type": "enumeration",
+      "enum": [
+        "PaperWork",
+        "Portal",
+        "Phlegm",
+        "Compact",
+        "Jellyfish",
+        "Skins",
+        "Series",
+        "Single"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "BlackAndWhite",
+        "Colored"
+      ]
+    },
+    "description": {
+      "type": "text"
+    },
+    "Prints": {
+      "type": "boolean"
+    },
+    "isAvailable": {
+      "type": "boolean"
+    },
+    "circulation": {
+      "type": "string"
+    },
+    "currentCirculation": {
+      "type": "string"
+    },
+    "size": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "createdYear": {
+      "type": "integer"
+    },
+    "OpenOrLimited": {
+      "type": "boolean"
+    },
+    "second_id": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}
