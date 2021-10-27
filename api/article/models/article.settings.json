@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "articles",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Article": {
+      "type": "richtext"
+    }
+  }
+}

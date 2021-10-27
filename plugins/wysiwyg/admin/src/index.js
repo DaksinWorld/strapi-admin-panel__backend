@@ -20,6 +20,7 @@ export default strapi => {
     preventComponentRendering: false,
     settings: null,
     trads: {},
+
   };
 
   strapi.registerField({ type: 'wysiwyg', Component: Wysiwyg });
