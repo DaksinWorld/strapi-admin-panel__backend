@@ -1,9 +1,8 @@
 {
-  "kind": "singleType",
+  "kind": "collectionType",
   "collectionName": "articles",
   "info": {
-    "name": "Article",
-    "description": ""
+    "name": "Article"
   },
   "options": {
     "increments": true,
@@ -12,11 +11,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Article": {
-      "type": "richtext"
+    "name": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     },
     "description": {
-      "type": "string"
+      "type": "richtext"
     }
   }
 }
