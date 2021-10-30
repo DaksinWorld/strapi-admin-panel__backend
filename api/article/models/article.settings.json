@@ -42,6 +42,9 @@
         "Series",
         "Single"
       ]
+    },
+    "about": {
+      "type": "string"
     }
   }
 }
