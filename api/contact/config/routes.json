@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/contact",
+      "path": "/files/contact",
       "handler": "contact.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/contact",
+      "path": "/files/contact",
       "handler": "contact.update",
       "config": {
         "policies": []

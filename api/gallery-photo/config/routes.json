@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/gallery-photos",
+      "path": "/files/gallery-photos",
       "handler": "gallery-photo.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/gallery-photos/count",
+      "path": "/files/gallery-photos/count",
       "handler": "gallery-photo.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/gallery-photos/:id",
+      "path": "/files/gallery-photos/:id",
       "handler": "gallery-photo.findOne",
       "config": {
         "policies": []

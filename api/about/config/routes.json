@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/about",
+      "path": "/files/about",
       "handler": "about.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "PUT",
-      "path": "/about",
+      "path": "/files/about",
       "handler": "about.update",
       "config": {
         "policies": []

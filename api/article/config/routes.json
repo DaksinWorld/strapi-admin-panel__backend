@@ -2,7 +2,7 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/articles",
+      "path": "/files/articles",
       "handler": "article.find",
       "config": {
         "policies": []
@@ -10,7 +10,7 @@
     },
     {
       "method": "GET",
-      "path": "/articles/count",
+      "path": "/files/articles/count",
       "handler": "article.count",
       "config": {
         "policies": []
@@ -18,7 +18,7 @@
     },
     {
       "method": "GET",
-      "path": "/articles/:id",
+      "path": "/files/articles/:id",
       "handler": "article.findOne",
       "config": {
         "policies": []
