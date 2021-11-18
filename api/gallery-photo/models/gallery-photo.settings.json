@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "gallery_photos",
   "info": {
-    "name": "gallery-photo"
+    "name": "gallery-photo",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,18 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "image": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "tags": {
       "type": "enumeration",
       "enum": [
@@ -76,6 +65,9 @@
     "second_id": {
       "type": "integer",
       "required": true
+    },
+    "imageName": {
+      "type": "string"
     }
   }
 }
