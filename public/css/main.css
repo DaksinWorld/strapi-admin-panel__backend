@@ -1,0 +1,205 @@
+@import "../font/librebaskerville.css";
+@import "../font/font.css";
+
+:root {
+    --fontSize-h1: 1.802rem;
+    --fontSize-h2: 1.602rem;
+    --fontSize-h3: 1.424rem;
+    --fontFamily: Montserrat;
+    /*Meu*/
+    /*CKEDITOR*/
+    --fontFamilyEditor: "Libre Baskerville";
+    --fontWeightBold: 500;
+    --fontWeightNormal: 400;
+    /*NAVBAR MENU*/
+    --fontSize-Menu: 1em;
+    --fontWeight-Menu-Normal: 300;
+    --MenuGap: 1.55em;
+    --fontSizeImage: 0.9rem;
+    /*Sidebar Menu*/
+    --fontSize-Sidebar: 1em;
+    --fontWeight-Sidebar-Normal: 300;
+    --SidebarGap: 0.8em;
+    /*Выделение в меню (левое меню и верхнее меню)*/
+    --fontWeight-Menu-Active: 400;
+}
+
+.container2 {
+    width: 1200px;
+    margin: 0 auto !important;
+}
+
+.image-text {
+    font-size: var(--fontSizeImage);
+}
+
+html {font-size: 100%;}
+
+body {
+background: #f2f2f2;
+font-family: 'Libre Baskerville', serif;
+font-weight: 400;
+line-height: 1.75;
+color: #1b3b46;
+    margin: 0;
+}
+
+p {margin-bottom: 1rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 1.802rem;
+}
+
+h2 {font-size: 1.602rem;}
+
+h3 {font-size: 1.424rem;}
+
+h4 {font-size: 1.266rem;}
+
+h5 {font-size: 1.125rem;}
+
+small, .text_small {font-size: 0.889rem;}
+
+.container {
+    width: 1730px;
+    margin: 0 auto !important;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    height: 50px;
+    padding: 12px;
+    background-color: white !important;
+    border:none;
+    border-bottom: 1px solid white;
+    outline: none;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+
+}
+input:focus {
+    border-bottom: 1px solid black;
+    transition: border-bottom-color .2s linear;
+}
+input:active {
+    background: none;
+}
+form > button {
+    background: #dae7f3;
+    border: 0;
+    padding: 10px;
+    font-size: 0.889rem;
+    font-family: var(--fontFamily);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    border-radius: 5px;
+    color: #666;
+}
+
+h3, label {
+    color: black;
+    font-weight: var(--fontWeightNormal);
+}
+
+label {
+    font-size: var(--fontSize-h3);
+    color: #666;
+    display: block;
+}
+
+.active {
+  color: black !important;
+  font-weight: var(--fontWeight-Menu-Active) !important;
+}
+
+a {
+    font-family: var(--fontFamily);
+    text-decoration: none;
+    color: #666;
+}
+
+h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.bold {
+    font-weight: 400;
+    color: black;
+}
+
+.layout {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    display: none;
+}
+
+.sidebar {
+    display: block;
+}
+
+@media screen and (max-width: 1110px) {
+    .layout {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 1740px) {
+    .container {
+        width: 1540px;
+    }
+}
+
+@media screen and (max-width: 1540px) {
+    .container {
+        width: 1350px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .container {
+        width: 1190px;
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 1214px) {
+    .container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .layout {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none !important;
+    }
+    .footer-bar {
+        display: block;
+    }
+}
